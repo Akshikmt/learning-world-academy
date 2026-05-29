@@ -148,7 +148,7 @@ export default function Register() {
               {errors.name && <span className="form-error">{errors.name}</span>}
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'var(--form-cols-2)', gap: '1rem' }}>
               <div className="form-group">
                 <label className="form-label" htmlFor="email">Email Address *</label>
                 <div style={{ position: 'relative' }}>
@@ -186,7 +186,7 @@ export default function Register() {
               </div>
             </div>
 
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'var(--form-cols-2)', gap: '1rem' }}>
               <div className="form-group">
                 <label className="form-label" htmlFor="password">Password *</label>
                 <div style={{ position: 'relative' }}>

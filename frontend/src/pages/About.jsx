@@ -17,7 +17,7 @@ export default function About() {
 
       {/* ISO and Government Registration detailed Grid */}
       <section style={{ backgroundColor: 'var(--bg)', padding: '5rem 0', marginBottom: '5rem' }}>
-        <div className="container" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '4rem', alignItems: 'center' }}>
+        <div className="container" style={{ display: 'grid', gridTemplateColumns: 'var(--grid-cols-2)', gap: 'var(--grid-gap-lg)', alignItems: 'center' }}>
           <div>
             <span className="section-subtitle">Valid Credibility</span>
             <h2 className="section-title">Fully Registered & Globally Certified</h2>
@@ -70,7 +70,7 @@ export default function About() {
 
       {/* Vision, Mission, Values */}
       <section className="container" style={{ marginBottom: '5rem' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2.5rem' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'var(--grid-cols-3)', gap: 'var(--grid-gap-md)' }}>
           <div style={{
             backgroundColor: '#FFFFFF',
             border: '1px solid var(--border)',
@@ -123,7 +123,7 @@ export default function About() {
 
       {/* Facilities and Infrastructure */}
       <section style={{ backgroundColor: 'var(--bg)', padding: '5rem 0' }}>
-        <div className="container" style={{ display: 'grid', gridTemplateColumns: '1fr 1.2fr', gap: '4rem', alignItems: 'center' }}>
+        <div className="container" style={{ display: 'grid', gridTemplateColumns: 'var(--grid-cols-2)', gap: 'var(--grid-gap-lg)', alignItems: 'center' }}>
           <div style={{ position: 'relative' }}>
             <span className="section-subtitle">Campus Amenities</span>
             <h2 className="section-title">Advanced Lab Facilities</h2>
@@ -132,7 +132,7 @@ export default function About() {
             </p>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'var(--grid-cols-2)', gap: 'var(--grid-gap-md)' }}>
             <div style={{ background: '#FFFFFF', padding: '1.5rem', borderRadius: 'var(--radius-md)', border: '1px solid var(--border)' }}>
               <h4 style={{ fontSize: '1.1rem', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                 <CheckSquare size={16} className="text-secondary" /> 1:1 Computer Ratio

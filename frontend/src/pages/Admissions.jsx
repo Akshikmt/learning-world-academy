@@ -243,7 +243,7 @@ export default function Admissions() {
                 {errors.email && <span className="form-error">{errors.email}</span>}
               </div>
 
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'var(--form-cols-2)', gap: '1rem' }}>
                 <div className="form-group">
                   <label className="form-label" htmlFor="phone">Phone Number *</label>
                   <input

@@ -178,7 +178,7 @@ export default function Home() {
 
       {/* 1. Hero Section */}
       <section className="hero-section" style={{ perspective: '1000px' }}>
-        <div className="container hero-grid" style={{ gridTemplateColumns: '0.95fr 1.05fr', gap: '3.5rem' }}>
+        <div className="container hero-grid" style={{ gridTemplateColumns: 'var(--grid-cols-hero)', gap: 'var(--grid-gap-lg)' }}>
           
           {/* Left Column: 3D Student Vector holding stack of colorful books */}
           <div className="student-container-3d animate-float" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -209,7 +209,7 @@ export default function Home() {
             <p className="hero-description" style={{ fontSize: '1.05rem', color: 'var(--text-muted)', marginBottom: '2rem' }}>
               Start your computer applications, financial accounting, and vocational career path at our globally recognized institute. Gain elite government-accredited qualifications from certified industry educators.
             </p>
-            <div className="hero-ctas" style={{ display: 'flex', gap: '1rem' }}>
+            <div className="hero-ctas" style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap' }}>
               <Link to="/courses" className="btn btn-primary" style={{ padding: '0.85rem 2rem' }}>
                 Explore Courses <ArrowRight size={18} />
               </Link>

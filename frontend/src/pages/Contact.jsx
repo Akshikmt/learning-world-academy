@@ -110,7 +110,7 @@ export default function Contact() {
           </p>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.2fr', gap: '4rem', alignItems: 'flex-start' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'var(--grid-cols-2)', gap: 'var(--grid-gap-lg)', alignItems: 'flex-start' }}>
           {/* Contact Information & Map Mockup */}
           <div>
             <div style={{
@@ -240,7 +240,7 @@ export default function Contact() {
                 {errors.name && <span className="form-error">{errors.name}</span>}
               </div>
 
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1rem' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'var(--form-cols-2)', gap: '1rem' }}>
                 <div className="form-group">
                   <label className="form-label" htmlFor="email">Email Address *</label>
                   <input
