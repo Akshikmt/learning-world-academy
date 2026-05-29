@@ -82,6 +82,10 @@ button, input, select, textarea {
 .text-secondary { color: var(--secondary); }
 .text-accent { color: var(--accent); }
 
+.page-padding {
+  padding: 5rem 0;
+}
+
 /* Buttons & Interactive Elements */
 .btn {
   display: inline-flex;
@@ -925,6 +929,12 @@ button, input, select, textarea {
     gap: 3rem;
     text-align: center;
   }
+  .hero-grid > div:first-child {
+    order: 2; /* student illustration stacks second */
+  }
+  .hero-grid > div:last-child {
+    order: 1; /* hero text stacks first */
+  }
   .hero-ctas {
     justify-content: center;
   }
@@ -991,6 +1001,35 @@ button, input, select, textarea {
   }
   .form-card {
     padding: 1.5rem;
+  }
+  .desktop-only {
+    display: none !important;
+  }
+  .auth-card {
+    padding: 1.5rem !important;
+  }
+  .page-padding, .section-padding {
+    padding: 2.5rem 0 !important;
+  }
+  .hero-section {
+    padding: 3.5rem 0 !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-title {
+    font-size: 1.15rem !important;
+  }
+  .hero-title-typing {
+    font-size: 2rem !important;
+  }
+  .typing-cursor {
+    height: 1.8rem !important;
+  }
+  .badge-certified-static {
+    font-size: 0.75rem !important;
+    text-align: center;
+    justify-content: center;
   }
 }
 

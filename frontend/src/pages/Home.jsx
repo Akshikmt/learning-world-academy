@@ -90,13 +90,14 @@ export default function Home() {
 
   React.useEffect(() => {
     const handleResize = () => {
+      let currentCards = 3;
       if (window.innerWidth < 768) {
-        setCardsToShow(1);
+        currentCards = 1;
       } else if (window.innerWidth < 1024) {
-        setCardsToShow(2);
-      } else {
-        setCardsToShow(3);
+        currentCards = 2;
       }
+      setCardsToShow(currentCards);
+      setStudentIndex(prev => Math.min(prev, topStudents.length - currentCards));
     };
     handleResize();
     window.addEventListener('resize', handleResize);

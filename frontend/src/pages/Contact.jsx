@@ -99,7 +99,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="animate-fade-in" style={{ backgroundColor: 'var(--bg)', padding: '5rem 0' }}>
+    <div className="animate-fade-in page-padding" style={{ backgroundColor: 'var(--bg)' }}>
       <div className="container">
         {/* Header */}
         <div className="section-header">

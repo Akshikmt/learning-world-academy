@@ -3,9 +3,9 @@ import { Award, Compass, Eye, ShieldCheck, CheckSquare, Target } from 'lucide-re
 
 export default function About() {
   return (
-    <div className="animate-fade-in" style={{ padding: '5rem 0' }}>
+    <div className="animate-fade-in page-padding">
       {/* Introduction Hero */}
-      <section className="container" style={{ marginBottom: '5rem' }}>
+      <section className="container" style={{ marginBottom: '3rem' }}>
         <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto' }}>
           <span className="section-subtitle">Our Institution</span>
           <h2 className="section-title" style={{ fontSize: '2.5rem' }}>Learning World Academy</h2>
@@ -16,7 +16,7 @@ export default function About() {
       </section>
 
       {/* ISO and Government Registration detailed Grid */}
-      <section style={{ backgroundColor: 'var(--bg)', padding: '5rem 0', marginBottom: '5rem' }}>
+      <section className="section-padding" style={{ backgroundColor: 'var(--bg)', marginBottom: '3rem' }}>
         <div className="container" style={{ display: 'grid', gridTemplateColumns: 'var(--grid-cols-2)', gap: 'var(--grid-gap-lg)', alignItems: 'center' }}>
           <div>
             <span className="section-subtitle">Valid Credibility</span>
@@ -69,7 +69,7 @@ export default function About() {
       </section>
 
       {/* Vision, Mission, Values */}
-      <section className="container" style={{ marginBottom: '5rem' }}>
+      <section className="container" style={{ marginBottom: '3rem' }}>
         <div style={{ display: 'grid', gridTemplateColumns: 'var(--grid-cols-3)', gap: 'var(--grid-gap-md)' }}>
           <div style={{
             backgroundColor: '#FFFFFF',
@@ -122,7 +122,7 @@ export default function About() {
       </section>
 
       {/* Facilities and Infrastructure */}
-      <section style={{ backgroundColor: 'var(--bg)', padding: '5rem 0' }}>
+      <section className="section-padding" style={{ backgroundColor: 'var(--bg)' }}>
         <div className="container" style={{ display: 'grid', gridTemplateColumns: 'var(--grid-cols-2)', gap: 'var(--grid-gap-lg)', alignItems: 'center' }}>
           <div style={{ position: 'relative' }}>
             <span className="section-subtitle">Campus Amenities</span>

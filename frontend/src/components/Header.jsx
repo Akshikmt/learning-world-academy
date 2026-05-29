@@ -27,7 +27,7 @@ export default function Header() {
             <GraduationCap size={22} className="text-primary" />
           </div>
           <div>
-            <h1 className="logo-title" style={{ fontSize: '1.5rem', fontWeight: 800, letterSpacing: '-0.02em' }}>Learning World Academy</h1>
+            <h1 className="logo-title" style={{ letterSpacing: '-0.02em' }}>Learning World Academy</h1>
           </div>
         </Link>
 
@@ -46,10 +46,10 @@ export default function Header() {
 
         {/* Actions Button / User Profile */}
         <div className="header-actions">
-          <Link to="/login" className="btn btn-outline" style={{ padding: '0.5rem 1.25rem', fontSize: '0.9rem' }}>
+          <Link to="/login" className="btn btn-outline desktop-only" style={{ padding: '0.5rem 1.25rem', fontSize: '0.9rem' }}>
             Login
           </Link>
-          <Link to="/register" className="btn btn-primary" style={{ padding: '0.5rem 1.25rem', fontSize: '0.9rem' }}>
+          <Link to="/register" className="btn btn-primary desktop-only" style={{ padding: '0.5rem 1.25rem', fontSize: '0.9rem' }}>
             Register
           </Link>
           
